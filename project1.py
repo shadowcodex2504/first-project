@@ -34,3 +34,8 @@ while True:
 
 with open('exp.txt','a') as file:
     file.write(f"{category} - ₹{amount}\n")
+
+print('\nYour Expenses History :')
+with open('exp.txt','r') as f:
+    for line in f:
+        print(line.strip()) 
