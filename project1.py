@@ -32,3 +32,5 @@ while True:
         print('Invalid Input!!!\nTry Again Please')
 
 
+with open('exp.txt','a') as file:
+    file.write(f"{category} - ₹{amount}\n")
