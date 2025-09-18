@@ -79,6 +79,8 @@ while True:
 
     elif choice == 3:
         exp.clear()
+        with open('exp.txt','w') as f:
+            f.write('')
         print("Your Expenses List is CLEARED")
     
     elif choice == 4:
