@@ -44,7 +44,7 @@ def show_summ():
             for cate,amts in exp_data.items():
 
                 total = sum(amts)
-                print(f'{cate} : ₹{amts}')
+                print(f'{cate} : ₹{total}')
                 s += total
             print(f'Total amount : ₹{s}')
     except Exception as e:
@@ -84,17 +84,17 @@ while True:
         print("Your Expenses List is CLEARED")
     
     elif choice == 4:
-        que = input('Are You Sure ,You to create a new file? \nThis will erase all the existing data. (Y/N) :').upper()
+        que = input('Are you sure you want to reset the tracker? This will erase all existing data. (Y/N):').upper()
         if que == 'Y':
             exp.clear()
             with open('exp.txt','w') as f:
                 f.write("")
-            print("A new file is created")
+            print("Tracker reset complete. Ready to log new expenses!")
         else:
             print('Operation cancelled')
 
     elif choice ==5:
-        print("Have a Nice Day")
+        print("All expenses saved. Tracker closed. Stay mindful✌️.")
         break
     else:
         print('Invalid Input!!!\nTry Again Please')
