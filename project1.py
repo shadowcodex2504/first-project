@@ -10,7 +10,7 @@ try:
             else :
                 exp[category] = [amount]
 except:
-    open('exp,txt','w').close()
+    open('exp.txt','w').close()
 
 def add_expenses(category,amount):
     if category in exp :
