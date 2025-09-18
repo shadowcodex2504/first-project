@@ -56,7 +56,7 @@ while True:
     print("\n            1. Add Expense")
     print("            2. Show Summary")
     print("            3. Clear list")
-    print("            4. Create a new Expense")
+    print("            4. Reset the Entire Tracker")
     print("            5. Exit")
     try:
         choice =int(input('Choose an Option:'))
