@@ -91,7 +91,7 @@ while True:
                 f.write("")
             print("A new file is created")
         else:
-            print('Operstion cancelled')
+            print('Operation cancelled')
 
     elif choice ==5:
         print("Have a Nice Day")
